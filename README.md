@@ -8,7 +8,7 @@ A ![Resize icon][2] reference style image.
 [2]: http://resizesafari.com/favicon.ico "Title"
 
 
-**Singletons**            <img src="https://github.com/ChiaraVanni/test/blob/master/singletons_div_3D.pdf" width="30">
+**Singletons**           ![img](https://github.com/ChiaraVanni/test/blob/master/singletons_div_3D.png)
 
 Total | 5790292
 ------| -------
