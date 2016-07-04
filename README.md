@@ -8,9 +8,9 @@ A ![Resize icon][2] reference style image.
 [2]: http://resizesafari.com/favicon.ico "Title"
 
 
-**Singletons**           <img src="https://github.com/ChiaraVanni/test/blob/master/singletons_div_3D.png" width="48">
-
-Total | 5790292
+**Singletons**           
+                        
+Total | 5790292        <img src="https://github.com/ChiaraVanni/test/blob/master/singletons_div_3D.png" width="100">
 ------| -------
 TARA  | 2713509
 OSD   | 786615
