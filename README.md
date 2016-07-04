@@ -26,7 +26,7 @@ GOS   | 2290168
 4. [BLAST/LAMBDA search vs UniProtKB](#BLAST/LAMBDA search vs UniProtKB)
 5. [BLAST/LAMBDA search/alignment vs NCBI nr database](#BLAST/LAMBDA search/alignment vs NCBI nr database)
 <br><br>
-
+<div id='TARA-OSD-GOS protein sequences classification'/>
 #TARA-OSD-GOS protein sequences classification
 <br> 
 We performed a functional analysis of protein sequences in terms of similarities to known protein families using the ultrafast protein classification ([UProC (version 1.2.0)](http://uproc.gobics.de/)) that is part of the CoMet web server and is available in terms of an open source C library.
@@ -51,7 +51,7 @@ While the no-hits (i.e the *UNKNOWN* families) will be further processed and cat
 [Results (ToDo!)](link to owcloud-mpi-bremen.de)
 
 <br> <br> <br>
-
+<div id='Hierarchical clustering'/>
 #Hierarchical clustering
 <br> 
 We performed a hierarchical clustering, using [CD-HIT programs](http://weizhongli-lab.org/lab-wiki/doku.php?id=cd-hit-user-guide), to reduce sequence redundancy and improve the performance of the further sequence analyses.
