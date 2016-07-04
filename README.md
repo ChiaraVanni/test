@@ -18,7 +18,6 @@ GOS   | 2290168
 
 <img src="https://github.com/ChiaraVanni/test/blob/master/singletons_div_3D.png" width="100">
 
-
 ## Table of Contents
 1. [TARA-OSD-GOS protein sequences classifications](#TARA-OSD-GOS protein sequences classification)
 2. [Hierarchical clustering](#Hierarchical clustering)
@@ -26,6 +25,7 @@ GOS   | 2290168
 4. [BLAST/LAMBDA search vs UniProtKB](#BLAST/LAMBDA search vs UniProtKB)
 5. [BLAST/LAMBDA search/alignment vs NCBI nr database](#BLAST/LAMBDA search/alignment vs NCBI nr database)
 <br><br>
+
 <div id='TARA-OSD-GOS protein sequences classification'/>
 #TARA-OSD-GOS protein sequences classification
 <br> 
@@ -70,4 +70,66 @@ For an easier reading of the information contained in the cluster files we built
 Number of clusters at 30% --> repres sequences...
 <br>
 [Tables]()
+
+
+<br> <br> <br>
+<div id='Filtering singletons & spurious ORFs'/>
+#Filtering singletons & spurious ORFs
+<br>
+
+##Filter out singletons
+<br>
+Basically we removed the clusters with only one sequence, (in Table_clstr30_from90.csv, at 30%)
+
+
+##Filter out spurious
+<br>
+We identified all the spurious ORFs searching AntiFam profile HMMs library against our set of already singletons-filtered sequences, using the hmmsearch program of the HMMER package (v. 3.1b2)
+
+
+[Script]() to update the numbers after uproc-pfam28
+
+<br> 
+###Results
+
+**Singletons**                             
+
+Total | 5790292
+------| -------
+TARA  | 2713509
+OSD   | 786615
+GOS   | 2290168
+
+
+**Spurious**
+
+Total | 3310
+------| -------
+TARA  | 2046
+OSD   | 392
+GOS   | 872
+
+
+<br> <br><br> 
+<div id='BLAST/LAMBDA search vs UniProtKB'/>
+#BLAST/LAMBDA search vs UniProtKB
+<br>
+##UniProtKB
+<br>
+**Building the UniProt database**
+We downloaded all the protein sequences (for [Bacteria](http://www.uniprot.org/uniprot/?query=taxonomy:2), [Archaea]( http://www.uniprot.org/uniprot/?query=taxonomy:2157) and [Viruses]( http://www.uniprot.org/uniprot/?query=taxonomy:10239)) from UniProtKB, which is non-redundant.
+
+##Choosing the search algorithm
+<br>
+Due to the large size of the database and the large number of sequences, BLAST proved/resulted to be too slow and computationally expensive.
+Thus we tested BLAST and three alternative algorithms, [RAPSearch2 (v1.02)](http://omics.informatics.indiana.edu/mg/RAPSearch2/), [LAMBDA (v0.9.4)](https://seqan.github.io/lambda/) and [DIAMOND (v0.7.12)](https://github.com/bbuchfink/diamond), on a single file of 10K sequences.
+We compared the results, and based on the number of hits (recruited) (and number of best-hits shared with blast) we decided to use the LAMBDA algorithm.
+
+[Scripts]()
+
+[Results]()
+
+<br> <br> <br>
+<div id='BLAST/LAMBDA search vs NCBI nr database'/>
+#BLAST/LAMBDA search/alignment vs NCBI nr database
 
